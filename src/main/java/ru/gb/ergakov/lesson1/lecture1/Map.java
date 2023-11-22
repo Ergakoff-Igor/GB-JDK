@@ -48,8 +48,6 @@ public class Map extends JPanel {
     }
 
     private void initMap() {
-        fieldSyzeY = 3;
-        fieldSyzeX = 3;
         field = new char[fieldSyzeY][fieldSyzeX];
         for (int i = 0; i < fieldSyzeY; i++) {
             for (int j = 0; j < fieldSyzeX; j++) {
@@ -92,15 +90,15 @@ public class Map extends JPanel {
         if (!isInitialized) return;
         panelWidth = getWidth();
         panelHeight = getHeight();
-        cellHeight = panelHeight / 3;
-        cellWidth = panelWidth / 3;
+        cellHeight = panelHeight / fieldSyzeY;
+        cellWidth = panelWidth / fieldSyzeX;
 
         g.setColor(Color.WHITE);
-        for (int h = 0; h < 3; h++) {
+        for (int h = 0; h < fieldSyzeY; h++) {
             int y = h * cellHeight;
             g.drawLine(0, y, panelWidth, y);
         }
-        for (int w = 0; w < 3; w++) {
+        for (int w = 0; w < fieldSyzeX; w++) {
             int x = w * cellWidth;
             g.drawLine(x, 0, x, panelHeight);
         }
