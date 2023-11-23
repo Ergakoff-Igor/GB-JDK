@@ -1,4 +1,6 @@
-package ru.gb.ergakov.lesson1.lecture1;
+package ru.gb.ergakov.lesson1.lecture1.ServerRun;
+
+import ru.gb.ergakov.lesson1.lecture1.Seminar1Menu;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +22,7 @@ public class ServerRun extends JFrame{
     JButton btnStop = new JButton("Stop Server");
     JButton btnExit = new JButton("Exit");
     boolean isServerWorking;
-    ServerRun(){
+    public ServerRun(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(WINDOW_POSX, WINDOW_POSY);
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);

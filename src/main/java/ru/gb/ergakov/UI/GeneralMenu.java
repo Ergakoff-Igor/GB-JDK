@@ -1,6 +1,5 @@
-package ru.gb.ergakov.lesson1.lecture1.UI;
+package ru.gb.ergakov.UI;
 
-import ru.gb.ergakov.lesson1.lecture1.GameWindow;
 import ru.gb.ergakov.lesson1.lecture1.Seminar1Menu;
 
 import javax.swing.*;

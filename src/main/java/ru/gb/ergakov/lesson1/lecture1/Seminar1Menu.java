@@ -1,6 +1,9 @@
 package ru.gb.ergakov.lesson1.lecture1;
 
-import ru.gb.ergakov.lesson1.lecture1.UI.GeneralMenu;
+import ru.gb.ergakov.lesson1.lecture1.Chat.Chat;
+import ru.gb.ergakov.lesson1.lecture1.ServerRun.ServerRun;
+import ru.gb.ergakov.lesson1.lecture1.TicTacToe.GameWindow;
+import ru.gb.ergakov.UI.GeneralMenu;
 
 import javax.swing.*;
 import java.awt.*;

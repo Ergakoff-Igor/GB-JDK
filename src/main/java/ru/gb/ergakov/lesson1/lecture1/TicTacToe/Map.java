@@ -1,4 +1,4 @@
-package ru.gb.ergakov.lesson1.lecture1;
+package ru.gb.ergakov.lesson1.lecture1.TicTacToe;
 
 import javax.swing.*;
 import java.awt.*;

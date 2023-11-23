@@ -1,4 +1,6 @@
-package ru.gb.ergakov.lesson1.lecture1;
+package ru.gb.ergakov.lesson1.lecture1.TicTacToe;
+
+import ru.gb.ergakov.lesson1.lecture1.TicTacToe.GameWindow;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
