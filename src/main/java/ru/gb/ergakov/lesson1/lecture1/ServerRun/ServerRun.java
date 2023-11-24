@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /*
 Создать простейшее окно управления сервером (по сути, любым), содержащее две кнопки
@@ -13,7 +14,7 @@ import java.awt.event.ActionListener;
 (имитировать запуск и остановку сервера, соответственно) и выставлять внутри интерфейса
 соответствующее булево isServerWorking.
  */
-public class ServerRun extends JFrame{
+public class ServerRun extends JFrame implements Listener{
     private static final int WINDOW_HEIGHT = 100;
     private static final int WINDOW_WIDTH = 300;
     private static final int WINDOW_POSX = 800;
@@ -21,7 +22,8 @@ public class ServerRun extends JFrame{
     JButton btnStart = new JButton("Start Server");
     JButton btnStop = new JButton("Stop Server");
     JButton btnExit = new JButton("Exit");
-    boolean isServerWorking;
+    ServerListener server = new Server(this);
+    ArrayList <String> log = new ArrayList<>();
     public ServerRun(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(WINDOW_POSX, WINDOW_POSY);
@@ -42,20 +44,13 @@ public class ServerRun extends JFrame{
 
         btnStart.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                if (!isServerWorking) {
-                    isServerWorking = true;
-                }
-                System.out.println("Статус сервера: " + isServerWorking);
-            }
+            public void actionPerformed(ActionEvent e) {server.serverListener(true); }
         });
+
         btnStop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (isServerWorking) {
-                    isServerWorking = false;
-                }
-                System.out.println("Статус сервера: " + isServerWorking);
+                server.serverListener(false);
             }
         });
 
@@ -68,4 +63,8 @@ public class ServerRun extends JFrame{
         });
     }
 
+    @Override
+    public void messageRes(String text) {
+        System.out.println(text);
+    }
 }
