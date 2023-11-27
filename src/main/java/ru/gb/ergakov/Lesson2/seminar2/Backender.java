@@ -1,4 +1,4 @@
-package ru.gb.ergakov.Lesson2;
+package ru.gb.ergakov.Lesson2.seminar2;
 
 public class Backender extends Developer implements BackendAction{
     @Override

@@ -1,5 +1,6 @@
 package ru.gb.ergakov.UI;
 
+import ru.gb.ergakov.Lesson2.lecture2.MainWindow;
 import ru.gb.ergakov.lesson1.lecture1.Seminar1Menu;
 
 import javax.swing.*;
@@ -14,6 +15,7 @@ public class GeneralMenu extends JFrame {
     private static final int WINDOW_POS_Y = 200;
 
     private final JButton BTN_SEMINAR_1 = new JButton("Seminar 1");
+    private final JButton BTN_SEMINAR_2 = new JButton("Seminar 2");
     private final JButton BTN_EXIT = new JButton("Exit program");
 
     public void generalMenu(){
@@ -27,8 +29,9 @@ public class GeneralMenu extends JFrame {
         panelButton.add(BTN_EXIT);
         add(panelButton, BorderLayout.SOUTH);
 
-        JPanel panelTask = new JPanel(new GridLayout(2, 1));
+        JPanel panelTask = new JPanel(new GridLayout(3, 1));
         panelTask.add(BTN_SEMINAR_1);
+        panelTask.add(BTN_SEMINAR_2);
         add(panelTask, BorderLayout.CENTER);
 
         setVisible(true);
@@ -44,6 +47,14 @@ public class GeneralMenu extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Seminar1Menu().sem1Menu();
+                setVisible(false);
+            }
+        });
+
+        BTN_SEMINAR_2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new MainWindow();
                 setVisible(false);
             }
         });
