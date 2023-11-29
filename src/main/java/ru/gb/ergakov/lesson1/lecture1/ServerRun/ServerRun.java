@@ -58,7 +58,7 @@ public class ServerRun extends JFrame implements Listener{
             @Override
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                new Seminar1Menu().sem1Menu();
+                new Seminar1Menu().semMenu();
             }
         });
     }

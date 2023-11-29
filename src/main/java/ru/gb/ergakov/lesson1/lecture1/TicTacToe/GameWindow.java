@@ -31,7 +31,7 @@ public class GameWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                new Seminar1Menu().sem1Menu();
+                new Seminar1Menu().semMenu();
             }
         });
 

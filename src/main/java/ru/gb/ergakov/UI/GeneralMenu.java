@@ -1,5 +1,6 @@
 package ru.gb.ergakov.UI;
 
+import ru.gb.ergakov.Lesson2.Seminar2Menu;
 import ru.gb.ergakov.Lesson2.lecture2.MainWindow;
 import ru.gb.ergakov.lesson1.lecture1.Seminar1Menu;
 
@@ -46,7 +47,7 @@ public class GeneralMenu extends JFrame {
         BTN_SEMINAR_1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new Seminar1Menu().sem1Menu();
+                new Seminar1Menu().semMenu();
                 setVisible(false);
             }
         });
@@ -54,7 +55,7 @@ public class GeneralMenu extends JFrame {
         BTN_SEMINAR_2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new MainWindow();
+                new Seminar2Menu().semMenu();
                 setVisible(false);
             }
         });

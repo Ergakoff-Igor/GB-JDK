@@ -7,4 +7,7 @@ package ru.gb.ergakov.Lesson2.seminar2;
 все его методы.
  */
 abstract class Developer {
+
+    protected void developGUI() {
+    }
 }

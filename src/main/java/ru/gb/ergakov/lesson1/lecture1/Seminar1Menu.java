@@ -1,5 +1,6 @@
 package ru.gb.ergakov.lesson1.lecture1;
 
+import ru.gb.ergakov.UI.InterSeminarMenu;
 import ru.gb.ergakov.lesson1.lecture1.Chat.Chat;
 import ru.gb.ergakov.lesson1.lecture1.ServerRun.ServerRun;
 import ru.gb.ergakov.lesson1.lecture1.TicTacToe.GameWindow;
@@ -10,7 +11,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Seminar1Menu extends JFrame {
+public class Seminar1Menu extends JFrame implements InterSeminarMenu {
     private static final int WINDOW_HEIGHT = 300;
     private static final int WINDOW_WIDTH = 507;
     private static final int WINDOW_POS_X = 500;
@@ -22,7 +23,8 @@ public class Seminar1Menu extends JFrame {
     JButton btnBack = new JButton("Come back to General menu");
     JButton btnExit = new JButton("Exit program");
 
-    public void sem1Menu (){
+    @Override
+    public void semMenu (){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(WINDOW_POS_X, WINDOW_POS_Y);
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);

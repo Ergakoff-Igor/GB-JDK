@@ -93,7 +93,7 @@ public class Chat extends JFrame {
 
         btnExit.addActionListener(e -> {
             setVisible(false);
-            new Seminar1Menu().sem1Menu();
+            new Seminar1Menu().semMenu();
         });
     }
 

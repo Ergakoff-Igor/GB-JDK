@@ -10,4 +10,9 @@ public class FullStack extends Developer implements BackendAction, FrontAction{
     public void front() {
 
     }
+
+    @Override
+    public void developGUI() {
+        System.out.println("FullStack GUI method");
+    }
 }
