@@ -1,8 +1,8 @@
 package ru.gb.ergakov.Lesson3;
 
-import ru.gb.ergakov.Lesson2.lecture2.MainWindow;
-import ru.gb.ergakov.Lesson2.seminar2.Homework2;
 import ru.gb.ergakov.Lesson3.Seminar3.Seminar3;
+import ru.gb.ergakov.Lesson3.homework3.Task2.ProgramCalc;
+import ru.gb.ergakov.Lesson3.homework3.Task3.Task3;
 import ru.gb.ergakov.UI.GeneralMenu;
 import ru.gb.ergakov.UI.InterSeminarMenu;
 
@@ -15,8 +15,9 @@ public class Seminar3Menu extends JFrame implements InterSeminarMenu {
     private static final int WINDOW_POS_X = 500;
     private static final int WINDOW_POS_Y = 200;
 
-    private final JButton BTN_SEMINAR_3 = new JButton("Seminar 3");
-    private final JButton BTN_HOMEWORK_3 = new JButton("Homework 3");
+    private final JButton BTN_SEMINAR_3 = new JButton("Seminar 3 / Homework 3 Task 1");
+    private final JButton BTN_HOMEWORK_3_2 = new JButton("Homework 3 Task 2");
+    private final JButton BTN_HOMEWORK_3_3 = new JButton("Homework 3 Task 3");
     private final JButton BTN_BACK = new JButton("Come back to General menu");
     private final JButton BTN_EXIT = new JButton("Exit program");
 
@@ -33,9 +34,10 @@ public class Seminar3Menu extends JFrame implements InterSeminarMenu {
         panelButton.add(BTN_EXIT);
         add(panelButton, BorderLayout.SOUTH);
 
-        JPanel panelTask = new JPanel(new GridLayout(2, 1));
+        JPanel panelTask = new JPanel(new GridLayout(3, 1));
         panelTask.add(BTN_SEMINAR_3);
-        panelTask.add(BTN_HOMEWORK_3);
+        panelTask.add(BTN_HOMEWORK_3_2);
+        panelTask.add(BTN_HOMEWORK_3_3);
         add(panelTask, BorderLayout.CENTER);
         setVisible(true);
 
@@ -50,8 +52,12 @@ public class Seminar3Menu extends JFrame implements InterSeminarMenu {
             new Seminar3().sem3();
         });
 
-        BTN_HOMEWORK_3.addActionListener(e -> {
-            new Homework2().homework2();
+        BTN_HOMEWORK_3_2.addActionListener(e -> {
+            new ProgramCalc().programCalc();
+        });
+
+        BTN_HOMEWORK_3_3.addActionListener(e -> {
+            new Task3().task3();
         });
     }
 }
