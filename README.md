@@ -73,3 +73,4 @@ https://github.com/StephYa7/JavaCore_0.1/tree/master/src/main/java/JDK/Prac_05_T
 3. После каждого приема пищи философ должен размышлять
 4. Не должно возникнуть общей блокировки
 5. Философы не должны есть больше одного раза подряд
+   * [Решение задания](src/main/java/ru/gb/ergakov/Lesson5/Homework5/HW5.java)

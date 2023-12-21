@@ -4,6 +4,7 @@ import ru.gb.ergakov.Lesson2.Seminar2Menu;
 import ru.gb.ergakov.Lesson2.lecture2.MainWindow;
 import ru.gb.ergakov.Lesson3.Seminar3Menu;
 import ru.gb.ergakov.Lesson4.Homework4.Homework4Menu;
+import ru.gb.ergakov.Lesson5.Homework5.HW5;
 import ru.gb.ergakov.lesson1.lecture1.Seminar1Menu;
 
 import javax.swing.*;
@@ -21,6 +22,7 @@ public class GeneralMenu extends JFrame {
     private final JButton BTN_SEMINAR_2 = new JButton("Seminar 2");
     private final JButton BTN_SEMINAR_3 = new JButton("Seminar 3");
     private final JButton BTN_HOMEWORK_4 = new JButton("Homework 4");
+    private final JButton BTN_HOMEWORK_5 = new JButton("Homework 5");
     private final JButton BTN_EXIT = new JButton("Exit program");
 
     public void generalMenu(){
@@ -39,6 +41,7 @@ public class GeneralMenu extends JFrame {
         panelTask.add(BTN_SEMINAR_2);
         panelTask.add(BTN_SEMINAR_3);
         panelTask.add(BTN_HOMEWORK_4);
+        panelTask.add(BTN_HOMEWORK_5);
         add(panelTask, BorderLayout.CENTER);
 
         setVisible(true);
@@ -85,6 +88,12 @@ public class GeneralMenu extends JFrame {
         BTN_HOMEWORK_4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new Homework4Menu().start();
+            }
+        });
+
+        BTN_HOMEWORK_5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new HW5().start();
             }
         });
     }
