@@ -63,8 +63,18 @@
    * [Решение задания](src/main/java/ru/gb/ergakov/Lesson4/Homework4/Actions.java)
 ## Урок 5. Многопоточность:
 https://github.com/StephYa7/JavaCore_0.1/tree/master/src/main/java/JDK/Prac_05_Threads/PracTask
+
 Полезные ссылки:
 * https://habr.com/ru/articles/330676/
+* https://github.com/StephYa7/JavaCore_0.1/tree/maste
+* https://proglib.io/p/vvedenie-v-mnogopotochnost-v-j
+* https://tproger.ru/translations/java8-concurrency-t
+* https://sky.pro/media/ponimanie-atomarnosti-v-progr
+* https://habr.com/ru/articles/157163/
+* https://habr.com/ru/articles/326146/
+* https://java-online.ru/concurrent-atomic.xhtml
+* https://habr.com/ru/articles/244881/
+* https://java-online.ru/concurrent-atomic.xhtml
 
 ### __*Домашнее задание:*__
 Есть пять философов (потоки), которые могут либо обедать либо размышлять.
@@ -74,3 +84,17 @@ https://github.com/StephYa7/JavaCore_0.1/tree/master/src/main/java/JDK/Prac_05_T
 4. Не должно возникнуть общей блокировки
 5. Философы не должны есть больше одного раза подряд
    * [Решение задания](src/main/java/ru/gb/ergakov/Lesson5/Homework5/HW5.java)
+
+## Урок 6. Управление проектом: сборщики проектов:
+* https://github.com/Labazov13/sem5_3.git
+
+### __*Домашнее задание:*__
+В качестве задачи предлагаю вам реализовать код для
+демонстрации парадокса Монти Холла ([Парадокс Монти Холла — Википедия](https://ru.wikipedia.org/wiki/Парадокс_Монти_Холла) ) и наглядно убедиться в верности парадокса
+(запустить игру в цикле на 1000 и вывести итоговый счет).
+
+Необходимо:
+* Создать свой Java Maven или Gradle проект;
+* Самостоятельно реализовать прикладную задачу;
+* Сохранить результат в HashMap<шаг теста, результат>
+* Вывести на экран статистику по победам и поражениям
