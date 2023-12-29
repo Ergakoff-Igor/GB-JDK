@@ -1,7 +1,5 @@
 package ru.gb.ergakov.Lesson4.Homework4;
 
-import lombok.Getter;
-
 import java.util.ArrayList;
 import java.util.List;
 

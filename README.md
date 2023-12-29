@@ -98,3 +98,17 @@ https://github.com/StephYa7/JavaCore_0.1/tree/master/src/main/java/JDK/Prac_05_T
 * Самостоятельно реализовать прикладную задачу;
 * Сохранить результат в HashMap<шаг теста, результат>
 * Вывести на экран статистику по победам и поражениям
+
+   * [Решение задания](src/main/java/ru/gb/ergakov/Lesson6/Homework6/App.java)
+
+Для удобства использовал библиотеку "lombok"
+
+Добавление зависимости:
+```html
+<dependency>
+   <groupId>org.projectlombok</groupId>
+   <artifactId>lombok</artifactId>
+   <version>1.18.30</version>
+   <scope>compile</scope>
+</dependency>
+```
